@@ -23,4 +23,3 @@ for idx, row in data_frame.iterrows():
 mask = (df['Survival'] == 1)
 df.loc[mask, 'Health Status'] = 'D'
 #print(df)
-print(df.loc[df['Weeding'] == 'TN1'])
