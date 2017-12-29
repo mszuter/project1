@@ -7,6 +7,9 @@ Created on Tue Dec 26 18:23:49 2017
 import pandas as pd
 import sys
 import math
+from ggplot import *
+
+#plt.style.use('ggplot')
 
 input_file = sys.argv[1]
 
@@ -23,3 +26,5 @@ for idx, row in data_frame.iterrows():
 mask = (df['Survival'] == 1)
 df.loc[mask, 'Health Status'] = 'D'
 #print(df)
+plt1 = ggplot(aes(x = 'Weeding', y='Height'), data=data_frame) + geom_boxplot() + xlab('Weeding treatment') + ylab('Height') + ggtitle('Test Plot')
+print(plt1)
