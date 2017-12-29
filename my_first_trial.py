@@ -8,8 +8,9 @@ import pandas as pd
 import sys
 import math
 from ggplot import *
+import matplotlib.pyplot as plt
 
-#plt.style.use('ggplot')
+plt.style.use('ggplot')
 
 input_file = sys.argv[1]
 
