@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>window.navigator</title>
+	<style>
+		td {border: 1px solid gray; padding: 3px 5px;}
+	</style>
+</head>
+<body>
+	<script>
+	//Don't gather information about the navigator using this method. This is unreliable and often fails.
+		document.write("<table>")
+		document.write("<tr><td>appName</tr><td>"+navigator.appName+"</td></tr>");
+		document.write("<tr><td>appCodeName</tr><td>"+navigator.appCodeName+"</td></tr>");
+		document.write("<tr><td>appVersion</tr><td>"+navigator.appVersion+"</td></tr>");
+		document.write("<tr><td>language</tr><td>"+navigator.language+"</td></tr>");
+		document.write("<tr><td>cookieEnabled</tr><td>"+navigator.cookieEnabled+"</td></tr>");
+		document.write("<tr><td>cpuClass</tr><td>"+navigator.cpuClass+"</td></tr>");
+		document.write("<tr><td>onLine</tr><td>"+navigator.onLine+"</td></tr>");
+		document.write("<tr><td>platform</tr><td>"+navigator.platform+"</td></tr>");
+		document.write("<tr><td>No. of plugins</tr><td>"+navigator.plugins.length+"</td></tr>");
+		document.write("</table>");
+	</script>
+</body>
+</html>
